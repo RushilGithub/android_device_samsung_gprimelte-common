@@ -1,4 +1,4 @@
-# OpenGLES
+# OpenGLES --da mettere in msm8916 system_prop.mk
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
@@ -10,7 +10,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.jbims=1 \
 	persist.radio.no_wait_for_card=1
 
-# Telephony
+# Telephony  boh meglio lasciarlo qua
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=10
 
@@ -19,5 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_steps=15 \
 	ro.config.media_vol_steps=30
 
+#da mettere in msm8916 system_prop.mk
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.low_ram=true
