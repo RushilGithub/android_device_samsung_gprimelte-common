@@ -20,5 +20,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.media_vol_steps=30
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.low_ram=true \
-	ro.config.zram.enabled=true
+	ro.config.low_ram=true
