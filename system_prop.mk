@@ -1,7 +1,3 @@
-# OpenGLES --da mettere in msm8916 system_prop.mk
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196608
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.snapshot_enabled=1 \
@@ -18,7 +14,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_steps=15 \
 	ro.config.media_vol_steps=30
-
-#da mettere in msm8916 system_prop.mk
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.low_ram=true

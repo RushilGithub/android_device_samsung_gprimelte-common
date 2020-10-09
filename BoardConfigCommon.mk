@@ -21,7 +21,7 @@ DEVICE_PATH := device/samsung/gprimelte-common
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
-# Incluude
+# Include
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Init
