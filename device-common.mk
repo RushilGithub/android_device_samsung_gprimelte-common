@@ -43,11 +43,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml
 
-# Screen density
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-TARGET_SCREEN_DENSITY := 240
-
 # Media configurations
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
@@ -64,9 +59,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-        libril \
-        librilutils \
-        rild
+    libril \
+    librilutils \
+    rild
 
 # Permissions
 PRODUCT_COPY_FILES += \
