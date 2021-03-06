@@ -89,25 +89,7 @@ int read_integer(const char* filename)
 
 void set_fingerprint()
 {
-	std::string fingerprint = GetProperty("ro.build.fingerprint", "");
-
-	if ((strlen(fingerprint.c_str()) > 1) && (strlen(fingerprint.c_str()) <= PROP_VALUE_MAX))
-		return;
-
-	char new_fingerprint[PROP_VALUE_MAX+1];
-
-	std::string build_id = GetProperty("ro.build.id","");
-	std::string build_tags = GetProperty("ro.build.tags","");
-	std::string build_type = GetProperty("ro.build.type","");
-	std::string device = GetProperty("ro.product.device","");
-	std::string incremental_version = GetProperty("ro.build.version.incremental","");
-	std::string release_version = GetProperty("ro.build.version.release","");
-
-	snprintf(new_fingerprint, PROP_VALUE_MAX, "samsung/%s/%s:%s/%s/%s:%s/%s",
-		device.c_str(), device.c_str(), release_version.c_str(), build_id.c_str(),
-		incremental_version.c_str(), build_type.c_str(), build_tags.c_str());
-
-	property_override_dual("ro.build.fingerprint", "ro.boot.fingerprint", new_fingerprint);
+	property_override_dual("ro.build.fingerprint", "ro.boot.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
 
 void set_cdma_properties(const char *operator_alpha, const char *operator_numeric, const char * network)
