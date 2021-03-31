@@ -117,7 +117,7 @@ void set_dsds_properties()
 	property_override("ro.multisim.simslotcount", "2");
 	property_override("ro.telephony.ril.config", "simactivation");
 	property_override("persist.radio.multisim.config", "dsds");
-	property_override("rild.libpath2", "/system/lib/libsec-ril-dsds.so");
+	property_override("rild.libpath2", "/vendor/lib/libsec-ril-dsds.so");
 	property_override("ro.multisim.audio_follow_default_sim", "false");
 }
 
