@@ -94,7 +94,8 @@ int read_integer(const char* filename)
 
 void set_fingerprint()
 {
-	property_override_dual("ro.build.fingerprint", "ro.boot.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+	property_override_dual("ro.build.fingerprint", "ro.boot.fingerprint", "google/walleye/walleye:11/RP1A.201005.004.A1/6934943:user/release-keys");
+	property_override("ro.build.version.security_patch", "2020-10-05");
 }
 
 void set_cdma_properties(const char *operator_alpha, const char *operator_numeric, const char * network)
