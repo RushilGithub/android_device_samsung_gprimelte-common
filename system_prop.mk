@@ -9,8 +9,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Telephony  boh meglio lasciarlo qua
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.default_network=10
-
-# Volume
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.vc_call_vol_steps=15 \
-	ro.config.media_vol_steps=30
