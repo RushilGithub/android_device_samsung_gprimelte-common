@@ -16,9 +16,9 @@
 
 
 cc_library_static {
-    name: "libinit_gprimelte",
+    name: "libinit_o7",
     recovery_available: true,
-    srcs: ["init_gprimelte.cpp"],
+    srcs: ["init_o7.cpp"],
     include_dirs: [
         "system/core/include",
         "system/core/init",

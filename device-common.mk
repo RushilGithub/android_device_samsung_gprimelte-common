@@ -19,9 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 
 #Inherit from vendor
-$(call inherit-product-if-exists, vendor/samsung/gprimelte-common/gprimelte-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/o7-common/o7-common-vendor.mk)
 
-DEVICE_PATH := device/samsung/gprimelte-common
+DEVICE_PATH := device/samsung/o7-common
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += \
