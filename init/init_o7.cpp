@@ -173,61 +173,9 @@ void vendor_load_properties()
 
 	std::string bootloader = android::base::GetProperty("ro.bootloader", "");
 
-	if (bootloader.find("G530HXX") == 0) {
-		device = (char *)"fortuna3g";
-		model = (char *)"SM-G530H";
-		set_gsm_properties();
-		set_dsds_properties();
-	}
-	else if (bootloader.find("G530HXC") == 0) {
-		device = (char *)"fortunave3g";
-		model = (char *)"SM-G530H";
-		set_gsm_properties();
-		set_dsds_properties();
-	}
-	else if (bootloader.find("G530FZ") == 0) {
-		device = (char *)"gprimeltexx";
-		model = (char *)"SM-G530FZ";
-		set_lte_properties();
-	}
-	else if (bootloader.find("G530MUU") == 0) {
-		device = (char *)"fortunaltezt";
-		model = (char *)"SM-G530MU";
-		set_lte_properties();
-	}
-	else if (bootloader.find("G530MU") == 0) {
-		device = (char *)"fortunalte";
-		model = (char *)"SM-G530M";
-		set_lte_properties();
-	}
-	else if (bootloader.find("G530P") == 0) {
-		device = (char *)"gprimeltespr";
-		model = (char *)"SM-G530P";
-		set_cdma_properties("Chameleon", "310000", "10");
-	}
-	else if (bootloader.find("G530T1") == 0) {
-		device = (char *)"gprimeltemtr";
-		model = (char *)"SM-G530T1";
-		set_lte_properties();
-	}
-	else if (bootloader.find("G530T") == 0) {
-		device = (char *)"gprimeltetmo";
-		model = (char *)"SM-G530T";
-		set_lte_properties();
-	}
-	else if (bootloader.find("G530W") == 0) {
-		device = (char *)"gprimeltecan";
-		model = (char *)"SM-G530W";
-		set_lte_properties();
-	}
-	else if (bootloader.find("S920L") == 0) {
-		device = (char *)"gprimeltetfnvzw";
-		model = (char *)"SM-S920L";
-		set_cdma_properties("TracFone", "310000", "10");
-	}
-	else if (bootloader.find("G5309W") == 0) {
-		device = (char *)"fortunaltectc";
-		model = (char *)"SM-G5309W";
+	if (bootloader.find("G600FY") == 0) {
+		device = (char *)"o7prolte";
+		model = (char *)"SM-G600FY";
 		set_lte_properties();
 	}
 	else {

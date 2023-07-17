@@ -1,9 +1,9 @@
 # Release name
-PRODUCT_RELEASE_NAME := Samsung Galaxy Grand Prime
+PRODUCT_RELEASE_NAME := Samsung O7
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 540
-TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1280
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
